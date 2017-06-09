@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_addItems"
+            android:icon="@drawable/pen"
+            android:title="Add Items" />
+        <item
+            android:id="@+id/nav_viewItems"
+            android:icon="@drawable/eye"
+            android:title="View Items" />
+        <item
+            android:id="@+id/nav_myAccount"
+            android:icon="@drawable/profile"
+            android:title="My Account" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/earth"
+                android:title="www.sofsisindia.com" />
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_menu_send"
+                android:title="sofsisindia@gmail.com" />
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/call"
+                android:title="+919745156008" />
+        </menu>
+    </item>
+
+</menu>

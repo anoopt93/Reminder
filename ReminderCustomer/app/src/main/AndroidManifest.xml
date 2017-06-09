@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sofsis.remindercustomer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sms1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddItems"
+            android:label="Reminder"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".ViewItems"
+            android:label="Reminder"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".MyAccount"
+            android:label="Reminder"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="Reminder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForgetPassword"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
