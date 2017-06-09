@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.sofsis.remindercustomer.Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <com.sa90.materialarcmenu.ArcMenu
+            android:id="@+id/arcmenu_android_example_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:menu_color="#ed2596"
+            app:menu_open="arc_left"
+            app:menu_scr="@drawable/fab_add">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_arc_menu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pen"
+                app:fab_label="ADD ITEM"
+                app:backgroundTint="#ed2596" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_arc_menu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye"
+                app:fab_label="VIEW ITEM"
+                app:backgroundTint="#ed2596" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_arc_menu_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                app:fab_label="PROFILE"
+                app:backgroundTint="#ed2596" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_arc_menu_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="DeleteAccount"
+                android:src="@drawable/delete"
+                app:fab_label="DELETE ACCOUNT"
+                app:backgroundTint="#ed2596" />
+
+        </com.sa90.materialarcmenu.ArcMenu>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
